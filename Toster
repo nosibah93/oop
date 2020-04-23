@@ -1,0 +1,43 @@
+function Toster(){
+  var instance ={}
+instance.toast1=""
+instance.addtoast= add;
+instance.eject=eject;
+instance.start=start;
+instance.stop=stop
+instance.doublestop=a
+  return instance
+}
+var add=function(toast){
+this.toast1=toast
+return this.toast1 
+}
+var eject=function(){
+  if(this.toast1.length>=1){
+    this.toast1.shift()
+    return this.toast1
+  }
+  return "the toster is empty"
+}
+var start=function(){
+  if(this.toast1.length>3){
+  console.log(this.toast1)
+  var that=this
+ var z= setTimeout(
+    function(){
+      console.log(that.toast1=that.toast1+'Ding!') }, 3000)
+   };
+ 
+
+  if (this.toast1.length===0){return "you need to add toast"
+   }
+}   
+   var stop=function(){
+    clearTimeout(this.z)
+   }
+   var a=function(){
+     if (this.toast1.length>5){
+    return "burned"
+   }
+   }
+  var x=Toster()
